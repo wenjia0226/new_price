@@ -42,7 +42,7 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../dist/三友价目册.html'),
+    index: path.resolve(__dirname, '../dist/newprice.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
