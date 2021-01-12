@@ -5,6 +5,8 @@ import Compare from '@/components/compare'
 import Main from '@/components/main'
 import Product from '@/components/product'
 import ProductDetail from '@/components/proDetail'
+import Introduce from '@/components/introduce'
+import Report from '@/components/report'
 Vue.use(Router)
 
 export default new Router({
@@ -17,7 +19,9 @@ export default new Router({
         {path: '/main', component: Main},
         {path: '/compare', component: Compare },
         {path: '/product', component: Product },
-        {path: '/productDetail/', component: ProductDetail},
+        {path: '/productDetail', component: ProductDetail},
+        {path: '/introduce', component: Introduce},
+         {path: '/report', component: Report}
       ]
     }
   ]

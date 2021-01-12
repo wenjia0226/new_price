@@ -19,11 +19,11 @@
            </el-menu-item>
          <el-menu-item index="/compare">
              <i class="iconfont icon-ico- block"></i>
-             <span slot="title" class="name">排行榜</span>
+             <span slot="title" class="name">对比</span>
            </el-menu-item>
          </el-menu>
      </el-aside>
-     <el-main>
+     <el-main style="position: relative;">
        <router-view></router-view>
      </el-main>
   </el-container>
