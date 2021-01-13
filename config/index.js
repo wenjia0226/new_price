@@ -10,9 +10,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/lightspace': {
+      '/price': {
         //target: 'http://47.104.222.22:8080/',
         target: 'https://www.guangliangkongjian.com',
+        //target: 'http://103.242.175.188:/8095/',
         //target: 'http://192.168.100.199:8080/',
         changeOrigin: true,  //允许跨域
       }
@@ -43,7 +44,6 @@ module.exports = {
   build: {
     // Template for index.html
     index: path.resolve(__dirname, '../dist/newprice.html'),
-
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'lightspace',

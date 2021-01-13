@@ -411,18 +411,23 @@
         Number(this.picked5) + Number(this.picked6) + Number(this.picked7) + Number(this.picked8) +
         Number(this.picked9) +  Number(this.picked10) + Number(this.picked11) + Number(this.picked12)+
         Number(this.picked13)+ Number(this.picked14) + Number(this.picked15);
-        if(this.totalNum !== 0) {
+        if(this.totalNum >= 0 && this.totalNum <=2) {
           this.showRemin = true;
+          this.level = '您的视力状况良好';
+          this.resultA = 'light';
         }
-        if(this.totalNum <= 16) {
+        if(this.totalNum >2 && this.totalNum <= 16) {
+          this.showRemin = true;
           this.level = '轻度视疲劳';
           this.resultA = 'light';
         }
         if(this.totalNum > 16 && this.totalNum <= 28) {
+          this.showRemin = true;
           this.level = '中度视疲劳';
           this.resultA = 'middle';
         }
         if(this.totalNum > 28){
+           this.showRemin = true;
           this.level = '重度视疲劳';
           this.resultA = 'serious';
         }

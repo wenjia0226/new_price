@@ -209,7 +209,7 @@ export default {
       param.append('glasses', this.glasses);
       axios({
         method: 'post',
-        url: '/lightspace/priceclient/contrastGlasses',
+        url: '/price/priceclient/contrastGlasses',
         data:param
        }).then(this.handleGetDiffrentSucc.bind(this)).catch((err) => {console.log(err)})
 	 },

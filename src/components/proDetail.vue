@@ -219,7 +219,7 @@
            param.append('id', this.id);
            axios({
              method: 'post',
-             url: '/lightspace/editSeries',
+             url: '/price/editSeries',
              data: param
            }).then((res) => {
              this.detailPic = res.data.data.picture;
@@ -233,7 +233,7 @@
           param.append('seriesId', this.id);
           axios({
             method: 'post',
-            url: '/lightspace/priceclient/findGlassesBySeries',
+            url: '/price/priceclient/findGlassesBySeries',
             data: param
           }).then(this.handleGetSwiperSucc.bind(this)).catch((err) => {
             console.log(err)

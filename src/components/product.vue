@@ -80,7 +80,7 @@
         let param = new FormData();
         axios({
              method: 'post',
-             url: '/lightspace/priceclient/getAllLabel',
+             url: '/price/priceclient/getAllLabel',
              data:param
             }).then(this.handleGetLabelSucc.bind(this)).catch((err) => {console.log(err)})
         },
@@ -115,7 +115,7 @@
          param.append('id',id);
          axios({
            method: 'post',
-           url: '/lightspace/priceclient/getSeriesByLabel',
+           url: '/price/priceclient/getSeriesByLabel',
            data: param
          }).then(this.handleGetSwiperSucc.bind(this)).catch((err) => {
            console.log(err)
